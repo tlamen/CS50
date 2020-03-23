@@ -22,9 +22,10 @@ int main(void) {
     //see how many 1 cent coins
     int one = rest3;
     //output the results
-    printf("Number of 25 cents coins: %i\n", twofive);
-    printf("Number of 10 cents coins: %i\n", ten);
-    printf("Number of 5 cents coins: %i\n", five);
-    printf("Number of 1 cent coins: %i\n", one);
-    
+    //printf("Number of 25 cents coins: %i\n", twofive);
+    //printf("Number of 10 cents coins: %i\n", ten);
+    //printf("Number of 5 cents coins: %i\n", five);
+    //printf("Number of 1 cent coins: %i\n", one);
+    int result = twofive + ten + five + one;
+    printf("%i\n", result);
 }
