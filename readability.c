@@ -12,24 +12,24 @@ int main(void) {
     double words = 1.0;
     double sentences = 0.0;
     //Running through characters
-    for(int i = 0; i < length; i++) {
+    for (int i = 0; i < length; i++) {
         //counting number of letters
-        if(text[i] > 64 & text[i] < 91) {
+        if (text[i] > 64 & text[i] < 91) {
             letters = letters + 1.0;
         }
-        if(text[i] > 96 & text[i] < 123) {
+        if (text[i] > 96 & text[i] < 123) {
             letters = letters + 1.0;
         }
         //counting number of words
-        if(text[i] == 32) {
+        if (text[i] == 32) {
             words = words + 1.0;
         }
         //counting number of sentences
-        if(text[i] == 33 | text[i] == 46 | text[i] == 63) {
+        if (text[i] == 33 | text[i] == 46 | text[i] == 63) {
             sentences = sentences + 1.0;
         }
     }
-    if(sentences == 0.0) {
+    if (sentences == 0.0) {
         sentences = 1.0;
     }
 
@@ -40,13 +40,13 @@ int main(void) {
     double index = 0.0588 * ele - 0.296 * esse - 15.8;
 
     //output:
-    if(index < 1) {
+    if (index < 1) {
         printf("Before Grade 1\n");
     }
-    if(index >= 1 & index <= 16) {
+    if (index >= 1 & index <= 16) {
         printf("Grade %i\n", (int) round(index));
     }
-    if(index > 16) {
+    if (index > 16) {
         printf("Grade 16+\n");
     }
 }
