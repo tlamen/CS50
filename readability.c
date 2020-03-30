@@ -41,7 +41,7 @@ int main(void) {
 
     //output:
     if(index < 1) {
-        printf("Before Grade 1.\n");
+        printf("Before Grade 1\n");
     }
     if(index >= 1 & index <= 16) {
         printf("Grade %i\n", (int) round(index));
