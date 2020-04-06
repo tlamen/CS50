@@ -21,12 +21,101 @@ int main(int argc, string argv[]) {
         return 1;
     }
 
-   //check if key is valid 2
+    //check if key is valid 2
 
     for (int i = 0; i < tamanho; i++) {
         if ((argv[1][i] > 64 & argv[1][i] < 91) | (argv[1][i] > 96 & argv[1][i] < 123)) {}
         else {
-            printf("Usage: ./substitution key");
+            printf("Key must contain only alphabetical values\n");
+            return 1;
+        }
+    }
+
+    //check if key is valid 3
+
+    for (int i = 0; i < tamanho; i++) {
+        int counter = 0;
+        if (argv[1][i] == argv[1][0]) {
+            counter++;
+        }
+        if (argv[1][i] == argv[1][1]) {
+            counter++;
+        }
+        if (argv[1][i] == argv[1][2]) {
+            counter++;
+        }
+        if (argv[1][i] == argv[1][3]) {
+            counter++;
+        }
+        if (argv[1][i] == argv[1][4]) {
+            counter++;
+        }
+        if (argv[1][i] == argv[1][5]) {
+            counter++;
+        }
+        if (argv[1][i] == argv[1][6]) {
+            counter++;
+        }
+        if (argv[1][i] == argv[1][7]) {
+            counter++;
+        }
+        if (argv[1][i] == argv[1][8]) {
+            counter++;
+        }
+        if (argv[1][i] == argv[1][9]) {
+            counter++;
+        }
+        if (argv[1][i] == argv[1][10]) {
+            counter++;
+        }
+        if (argv[1][i] == argv[1][11]) {
+            counter++;
+        }
+        if (argv[1][i] == argv[1][12]) {
+            counter++;
+        }
+        if (argv[1][i] == argv[1][13]) {
+            counter++;
+        }
+        if (argv[1][i] == argv[1][14]) {
+            counter++;
+        }
+        if (argv[1][i] == argv[1][15]) {
+            counter++;
+        }
+        if (argv[1][i] == argv[1][16]) {
+            counter++;
+        }
+        if (argv[1][i] == argv[1][17]) {
+            counter++;
+        }
+        if (argv[1][i] == argv[1][18]) {
+            counter++;
+        }
+        if (argv[1][i] == argv[1][19]) {
+            counter++;
+        }
+        if (argv[1][i] == argv[1][20]) {
+            counter++;
+        }
+        if (argv[1][i] == argv[1][21]) {
+            counter++;
+        }
+        if (argv[1][i] == argv[1][22]) {
+            counter++;
+        }
+        if (argv[1][i] == argv[1][23]) {
+            counter++;
+        }
+        if (argv[1][i] == argv[1][24]) {
+            counter++;
+        }
+        if (argv[1][i] == argv[1][25]) {
+            counter++;
+        }
+
+        if(counter > 1) {
+            printf("Invalid key\n");
             return 1;
         }
     }
