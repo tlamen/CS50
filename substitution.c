@@ -33,6 +33,8 @@ int main(int argc, string argv[]) {
 
     int ptlength = strlen(pt);
 
+    printf("ciphertext: ");
+
     //run through the pt string
 
     for (int i = 0; i < ptlength; i++) {
@@ -253,7 +255,6 @@ int main(int argc, string argv[]) {
         }
 
         pt[i] = aux2;
-
         printf("%c", pt[i]);
 
     }
