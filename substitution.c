@@ -24,19 +24,10 @@ int main(int argc, string argv[]) {
    //check if key is valid 2
 
     for (int i = 0; i < tamanho; i++) {
-        char auxarray[26];
         if ((argv[1][i] > 64 & argv[1][i] < 91) | (argv[1][i] > 96 & argv[1][i] < 123)) {}
         else {
             printf("Usage: ./substitution key");
             return 1;
-        }
-        auxarray[i] = argv[1][i];
-        int auxtamanho = strlen(auxarray);
-        for (int j = 0; j < auxtamanho; j++) {
-            if (argv[1][i] == auxarray[j]) {
-                printf("Invalid key\n");
-                return 1;
-            }
         }
     }
 
