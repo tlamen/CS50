@@ -6,9 +6,11 @@
 char maiuscula(char  a, char b);
 char minuscula(char a, char b);
 
-int main(int argc, string argv[]) {
+int main(int argc, string argv[])
+{
 
-    if (argc != 2) {
+    if (argc != 2)
+    {
         printf("Usage: ./substitution KEY\n");
         return 1;
     }
@@ -16,16 +18,19 @@ int main(int argc, string argv[]) {
     //check if key is valid 1
     int tamanho = strlen(argv[1]);
 
-    if (tamanho != 26) {
+    if (tamanho != 26)
+    {
         printf("Key must contain 26 characters\n");
         return 1;
     }
 
     //check if key is valid 2
 
-    for (int i = 0; i < tamanho; i++) {
+    for (int i = 0; i < tamanho; i++)
+    {
         if ((argv[1][i] > 64 & argv[1][i] < 91) | (argv[1][i] > 96 & argv[1][i] < 123)) {}
-        else {
+        else
+        {
             printf("Key must contain only alphabetical values\n");
             return 1;
         }
@@ -33,88 +38,116 @@ int main(int argc, string argv[]) {
 
     //check if key is valid 3
 
-    for (int i = 0; i < tamanho; i++) {
+    for (int i = 0; i < tamanho; i++)
+    {
         int counter = 0;
-        if (argv[1][i] == argv[1][0]) {
+        if (argv[1][i] == argv[1][0])
+        {
             counter++;
         }
-        if (argv[1][i] == argv[1][1]) {
+        if (argv[1][i] == argv[1][1])
+        {
             counter++;
         }
-        if (argv[1][i] == argv[1][2]) {
+        if (argv[1][i] == argv[1][2])
+        {
             counter++;
         }
-        if (argv[1][i] == argv[1][3]) {
+        if (argv[1][i] == argv[1][3])
+        {
             counter++;
         }
-        if (argv[1][i] == argv[1][4]) {
+        if (argv[1][i] == argv[1][4])
+        {
             counter++;
         }
-        if (argv[1][i] == argv[1][5]) {
+        if (argv[1][i] == argv[1][5])
+        {
             counter++;
         }
-        if (argv[1][i] == argv[1][6]) {
+        if (argv[1][i] == argv[1][6])
+        {
             counter++;
         }
-        if (argv[1][i] == argv[1][7]) {
+        if (argv[1][i] == argv[1][7])
+        {
             counter++;
         }
-        if (argv[1][i] == argv[1][8]) {
+        if (argv[1][i] == argv[1][8])
+        {
             counter++;
         }
-        if (argv[1][i] == argv[1][9]) {
+        if (argv[1][i] == argv[1][9])
+        {
             counter++;
         }
-        if (argv[1][i] == argv[1][10]) {
+        if (argv[1][i] == argv[1][10])
+        {
             counter++;
         }
-        if (argv[1][i] == argv[1][11]) {
+        if (argv[1][i] == argv[1][11])
+        {
             counter++;
         }
-        if (argv[1][i] == argv[1][12]) {
+        if (argv[1][i] == argv[1][12])
+        {
             counter++;
         }
-        if (argv[1][i] == argv[1][13]) {
+        if (argv[1][i] == argv[1][13])
+        {
             counter++;
         }
-        if (argv[1][i] == argv[1][14]) {
+        if (argv[1][i] == argv[1][14])
+        {
             counter++;
         }
-        if (argv[1][i] == argv[1][15]) {
+        if (argv[1][i] == argv[1][15])
+        {
             counter++;
         }
-        if (argv[1][i] == argv[1][16]) {
+        if (argv[1][i] == argv[1][16])
+        {
             counter++;
         }
-        if (argv[1][i] == argv[1][17]) {
+        if (argv[1][i] == argv[1][17])
+        {
             counter++;
         }
-        if (argv[1][i] == argv[1][18]) {
+        if (argv[1][i] == argv[1][18])
+        {
             counter++;
         }
-        if (argv[1][i] == argv[1][19]) {
+        if (argv[1][i] == argv[1][19])
+        {
             counter++;
         }
-        if (argv[1][i] == argv[1][20]) {
+        if (argv[1][i] == argv[1][20])
+        {
             counter++;
         }
-        if (argv[1][i] == argv[1][21]) {
+        if (argv[1][i] == argv[1][21])
+        {
             counter++;
         }
-        if (argv[1][i] == argv[1][22]) {
+        if (argv[1][i] == argv[1][22])
+        {
             counter++;
         }
-        if (argv[1][i] == argv[1][23]) {
+        if (argv[1][i] == argv[1][23])
+        {
             counter++;
         }
-        if (argv[1][i] == argv[1][24]) {
+        if (argv[1][i] == argv[1][24])
+        {
             counter++;
         }
-        if (argv[1][i] == argv[1][25]) {
+        if (argv[1][i] == argv[1][25])
+        {
             counter++;
         }
 
-        if(counter > 1) {
+        if(counter > 1)
+        {
             printf("Invalid key\n");
             return 1;
         }
@@ -130,7 +163,8 @@ int main(int argc, string argv[]) {
 
     //run through the pt string
 
-    for (int i = 0; i < ptlength; i++) {
+    for (int i = 0; i < ptlength; i++)
+    {
 
         //creating aux1iliar variable "aux1"
 
@@ -138,212 +172,264 @@ int main(int argc, string argv[]) {
         char aux2 = pt[i];
 
         //'A'
-        if (pt[i] == 65) {
+        if (pt[i] == 65)
+        {
             aux2 = maiuscula(argv[1][0], aux1);
         }
         //'B'
-        if (pt[i] == 66) {
+        if (pt[i] == 66)
+        {
             aux2 = maiuscula(argv[1][1], aux1);
         }
         //'C'
-        if (pt[i] == 67) {
+        if (pt[i] == 67)
+        {
             aux2 = maiuscula(argv[1][2], aux1);
         }
         //'D'
-        if (pt[i] == 68) {
+        if (pt[i] == 68)
+        {
             aux2 = maiuscula(argv[1][3], aux1);
         }
         //'E'
-        if (pt[i] == 69) {
+        if (pt[i] == 69)
+        {
             aux2 = maiuscula(argv[1][4], aux1);
         }
         //'F'
-        if (pt[i] == 70) {
+        if (pt[i] == 70)
+        {
             aux2 = maiuscula(argv[1][5], aux1);
         }
         //'G'
-        if (pt[i] == 71) {
+        if (pt[i] == 71)
+        {
             aux2 = maiuscula(argv[1][6], aux1);
         }
         //'H'
-        if (pt[i] == 72) {
+        if (pt[i] == 72)
+        {
             aux2 = maiuscula(argv[1][7], aux1);
         }
         //'I'
-        if (pt[i] == 73) {
+        if (pt[i] == 73)
+        {
             aux2 = maiuscula(argv[1][8], aux1);
         }
         //'J'
-        if (pt[i] == 74) {
+        if (pt[i] == 74)
+        {
             aux2 = maiuscula(argv[1][9], aux1);
         }
         //'K'
-        if (pt[i] == 75) {
+        if (pt[i] == 75)
+        {
             aux2 = maiuscula(argv[1][10], aux1);
         }
         //'L'
-        if (pt[i] == 76) {
+        if (pt[i] == 76)
+        {
             aux2 = maiuscula(argv[1][11], aux1);
         }
         //'M'
-        if (pt[i] == 77) {
+        if (pt[i] == 77)
+        {
             aux2 = maiuscula(argv[1][12], aux1);
         }
         //'N'
-        if (pt[i] == 78) {
+        if (pt[i] == 78)
+        {
             aux2 = maiuscula(argv[1][13], aux1);
         }
         //'O'
-        if (pt[i] == 79) {
+        if (pt[i] == 79)
+        {
             aux2 = maiuscula(argv[1][14], aux1);
         }
         //'P'
-        if (pt[i] == 80) {
+        if (pt[i] == 80)
+        {
             aux2 = maiuscula(argv[1][15], aux1);
         }
         //'Q'
-        if (pt[i] == 81) {
+        if (pt[i] == 81)
+        {
             aux2 = maiuscula(argv[1][16], aux1);
         }
         //'R'
-        if (pt[i] == 82) {
+        if (pt[i] == 82)
+        {
             aux2 = maiuscula(argv[1][17], aux1);
         }
         //'S'
-        if (pt[i] == 83) {
+        if (pt[i] == 83)
+        {
             aux2 = maiuscula(argv[1][18], aux1);
         }
         //'T'
-        if (pt[i] == 84) {
+        if (pt[i] == 84)
+        {
             aux2 = maiuscula(argv[1][19], aux1);
         }
         //'U'
-        if (pt[i] == 85) {
+        if (pt[i] == 85)
+        {
             aux2 = maiuscula(argv[1][20], aux1);
         }
         //'V'
-        if (pt[i] == 86) {
+        if (pt[i] == 86)
+        {
             aux2 = maiuscula(argv[1][21], aux1);
         }
         //'W'
-        if (pt[i] == 87) {
+        if (pt[i] == 87)
+        {
             aux2 = maiuscula(argv[1][22], aux1);
         }
         //'X'
-        if (pt[i] == 88) {
+        if (pt[i] == 88)
+        {
             aux2 = maiuscula(argv[1][23], aux1);
         }
         //'Y'
-        if (pt[i] == 89) {
+        if (pt[i] == 89)
+        {
             aux2 = maiuscula(argv[1][24], aux1);
         }
         //'Z'
-        if (pt[i] == 90) {
+        if (pt[i] == 90)
+        {
             aux2 = maiuscula(argv[1][25], aux1);
         }
 
         //'a'
-        if (pt[i] == 97) {
+        if (pt[i] == 97)
+        {
             aux2 = minuscula(argv[1][0], aux1);
         }
         //'b'
-        if (pt[i] == 98) {
+        if (pt[i] == 98)
+        {
             aux2 = minuscula(argv[1][1], aux1);
         }
         //'c'
-        if (pt[i] == 99) {
+        if (pt[i] == 99)
+        {
             aux2 = minuscula(argv[1][2], aux1);
         }
         //'d'
-        if (pt[i] == 100) {
+        if (pt[i] == 100)
+        {
             aux2 = minuscula(argv[1][3], aux1);
         }
         //'e'
-        if (pt[i] == 101) {
+        if (pt[i] == 101)
+        {
             aux2 = minuscula(argv[1][4], aux1);
         }
         //'f'
-        if (pt[i] == 102) {
+        if (pt[i] == 102)
+        {
             aux2 = minuscula(argv[1][5], aux1);
         }
         //'g'
-        if (pt[i] == 103) {
+        if (pt[i] == 103)
+        {
             aux2 = minuscula(argv[1][6], aux1);
         }
         //'h'
-        if (pt[i] == 104) {
+        if (pt[i] == 104)
+        {
             aux2 = minuscula(argv[1][7], aux1);
         }
         //'i'
-        if (pt[i] == 105) {
+        if (pt[i] == 105)
+        {
             aux2 = minuscula(argv[1][8], aux1);
         }
         //'j'
-        if (pt[i] == 106) {
+        if (pt[i] == 106)
+        {
             aux2 = minuscula(argv[1][9], aux1);
         }
         //'k'
-        if (pt[i] == 107) {
+        if (pt[i] == 107)
+        {
             aux2 = minuscula(argv[1][10], aux1);
         }
         //'l'
-        if (pt[i] == 108) {
+        if (pt[i] == 108)
+        {
             aux2 = minuscula(argv[1][11], aux1);
         }
         //'m'
-        if (pt[i] == 109) {
+        if (pt[i] == 109)
+        {
             aux2 = minuscula(argv[1][12], aux1);
         }
         //'n'
-        if (pt[i] == 110) {
+        if (pt[i] == 110)
+        {
             aux2 = minuscula(argv[1][13], aux1);
         }
         //'o'
-        if (pt[i] == 111) {
+        if (pt[i] == 111)
+        {
             aux2 = minuscula(argv[1][14], aux1);
         }
         //'p'
-        if (pt[i] == 112) {
+        if (pt[i] == 112)
+        {
             aux2 = minuscula(argv[1][15], aux1);
         }
         //'q'
-        if (pt[i] == 113) {
+        if (pt[i] == 113)
+        {
             aux2 = minuscula(argv[1][16], aux1);
         }
         //'r'
-        if (pt[i] == 114) {
+        if (pt[i] == 114)
+        {
             aux2 = minuscula(argv[1][17], aux1);
         }
         //'s'
-        if (pt[i] == 115) {
+        if (pt[i] == 115)
+        {
             aux2 = minuscula(argv[1][18], aux1);
         }
         //'t'
-        if (pt[i] == 116) {
+        if (pt[i] == 116)
+        {
             aux2 = minuscula(argv[1][19], aux1);
         }
         //'u'
-        if (pt[i] == 117) {
+        if (pt[i] == 117)
+        {
             aux2 = minuscula(argv[1][20], aux1);
         }
         //'v'
-        if (pt[i] == 118) {
+        if (pt[i] == 118)
+        {
             aux2 = minuscula(argv[1][21], aux1);
         }
         //'w'
-        if (pt[i] == 119) {
+        if (pt[i] == 119)
+        {
             aux2 = minuscula(argv[1][22], aux1);
         }
         //'x'
-        if (pt[i] == 120) {
+        if (pt[i] == 120)
+        {
             aux2 = minuscula(argv[1][23], aux1);
         }
         //'y'
-        if (pt[i] == 121) {
+        if (pt[i] == 121)
+        {
             aux2 = minuscula(argv[1][24], aux1);
         }
         //'z'
-        if (pt[i] == 122) {
+        if (pt[i] == 122)
+        {
             aux2 = minuscula(argv[1][25], aux1);
         }
 
@@ -356,23 +442,29 @@ int main(int argc, string argv[]) {
 
 }
 
-char maiuscula(char a, char b) {
-    if (a > 64 & a < 91) {
+char maiuscula(char a, char b)
+{
+    if (a > 64 & a < 91)
+    {
         b = a;
         return b;
     }
-    else {
+    else
+    {
         b = a - 32;
         return b;
     }
 }
 
-char minuscula(char a, char b) {
-    if (a > 96 & a < 123) {
+char minuscula(char a, char b)
+{
+    if (a > 96 & a < 123)
+    {
         b = a;
         return b;
     }
-    else {
+    else
+    {
         b = a + 32;
         return b;
     }
