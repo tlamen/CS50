@@ -8,12 +8,15 @@ char minuscula(char a, char b);
 
 int main(int argc, string argv[]) {
 
+    if (argc == 0) {
+        printf("Usage: ./substitution key\n");
+    }
     //check if key is valid 1
 
     int tamanho = strlen(argv[1]);
 
     if (tamanho != 26) {
-        printf("Invalid key\n");
+        printf("Key must contain 26 characters\n");
         return 0;
     }
 
@@ -22,7 +25,7 @@ int main(int argc, string argv[]) {
     for (int i = 0; i < tamanho; i++) {
         if ((argv[1][i] > 64 & argv[1][i] < 91) | (argv[1][i] > 96 & argv[1][i] < 123)) {}
         else {
-            printf("invalid key\n");
+            printf("Usage: ./substitution key");
             return 0;
         }
     }
