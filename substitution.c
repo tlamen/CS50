@@ -18,7 +18,7 @@ int main(int argc, string argv[]) {
 
     if (tamanho != 26) {
         printf("Key must contain 26 characters\n");
-        return 0;
+        return 1;
     }
 
    //check if key is valid 2
@@ -27,7 +27,7 @@ int main(int argc, string argv[]) {
         if ((argv[1][i] > 64 & argv[1][i] < 91) | (argv[1][i] > 96 & argv[1][i] < 123)) {}
         else {
             printf("Usage: ./substitution key");
-            return 0;
+            return 1;
         }
     }
 
