@@ -14,7 +14,7 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
             float oldblue = image[j][i].rgbtBlue;
 
             //Get the average (pt = media) to get the gray shades
-            float media = (oldred + oldgreen + oldblue) / 3;
+            float media = round((oldred + oldgreen + oldblue) / 3);
 
             //Assign every value with the average value to make it gray
             image[j][i].rgbtRed = media;
