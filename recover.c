@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
     int counter = 0;
 
     bool aux = true;
-    while (aux)
+    do
     {
         //break if it reaches end of file
         if (feof(file))
@@ -59,7 +59,7 @@ int main(int argc, char *argv[])
                 if (block[0] == 0xff && block[1] == 0xd8 && block[2] == 0xff && (block[3] > 0xdf & block [3] < 0xf0))
                 {
                     fclose(picture);
-                    break;
+                    aux2 = false;
                 }
                 else
                 {
@@ -68,9 +68,10 @@ int main(int argc, char *argv[])
                 }
                 if (feof(file))
                 {
-                    break;
+                    aux2 = false;
                 }
             }
         }
-    }
+        aux = true;
+    } while (aux);
 }
