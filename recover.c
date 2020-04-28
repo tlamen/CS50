@@ -45,7 +45,14 @@ int main(int argc, char *argv[])
         {
 
             char name[7];
-            sprintf(name, "00%i.jpg", counter);
+            if (counter < 10)
+            {
+                sprintf(name, "00%i.jpg", counter);
+            }
+            else
+            {
+                sprintf(name, "0%i.jpg", counter);
+            }
 
             FILE* picture = fopen(name, "w");
             fwrite(&block, 512, 1, picture);
