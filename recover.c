@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
     }
 
     //opening file
-    FILE* file = fopen(argv[1], "r");
+    FILE *file = fopen(argv[1], "r");
     if (!file)
     {
         printf("Couldn't read file\n");
@@ -54,7 +54,7 @@ int main(int argc, char *argv[])
                 sprintf(name, "0%i.jpg", counter);
             }
 
-            FILE* picture = fopen(name, "w");
+            FILE *picture = fopen(name, "w");
             fwrite(&block, 512, 1, picture);
             counter++;
 
@@ -80,5 +80,6 @@ int main(int argc, char *argv[])
             }
         }
         aux = true;
-    } while (aux);
+    }
+    while (aux);
 }
