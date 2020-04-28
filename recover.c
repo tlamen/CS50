@@ -27,6 +27,7 @@ int main(int argc, char *argv[])
     //counter
     int counter = 0;
 
+    //set auxiliar variable and start do-while loop
     bool aux = true;
     do
     {
@@ -36,14 +37,16 @@ int main(int argc, char *argv[])
             break;
         }
 
+        //first read if counter == 0
         if (counter == 0)
         {
             fread(block, 512, 1, file);
         }
 
+        //check if block is the start of a jpeg file
         if (block[0] == 0xff && block[1] == 0xd8 && block[2] == 0xff && (block[3] > 0xdf & block [3] < 0xf0))
         {
-
+            //name and number the picture file
             char name[7];
             if (counter < 10)
             {
@@ -54,20 +57,24 @@ int main(int argc, char *argv[])
                 sprintf(name, "0%i.jpg", counter);
             }
 
+            //write file and counter++
             FILE *picture = fopen(name, "w");
             fwrite(&block, 512, 1, picture);
             counter++;
 
+            //prepare for while loop
             fread(block, 512, 1, file);
             bool aux2 = true;
 
             while (aux2)
             {
+                //check if block starts a new jpeg file
                 if (block[0] == 0xff && block[1] == 0xd8 && block[2] == 0xff && (block[3] > 0xdf & block [3] < 0xf0))
                 {
                     fclose(picture);
                     aux2 = false;
                 }
+                //write block into current file
                 else
                 {
                     fwrite(&block, 512, 1, picture);
@@ -79,6 +86,7 @@ int main(int argc, char *argv[])
                 }
             }
         }
+        //make certain that aux is true so do-while loop continues
         aux = true;
     }
     while (aux);
