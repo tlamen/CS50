@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+        <script src="Translator.js"></script>
+    </head>
+    <body>
+        <!--navbar from bootstrap-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="index.html">My Webpage</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="football.html" id="futebol">Football<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="music.html" id="musica" style="font-weight: bold;">Music<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="videogames.html">Videogames<span class="sr-only">(current)</span></a>
+              </li>
+            </ul>
+            <form onsubmit="toPortugueseMusic(); return false;">
+                <input type="image" id="portuguese" src="media/Bandeiras_Brazil_e_Portugal.png" height=40 width=60 alt="Português">
+            </form>
+            <form onsubmit="toEnglishMusic(); return false;">
+                <input type="image" id="english" src="media/english.jpg" height=40 width=60 alt="English">
+            </form>
+
+          </div>
+        </nav>
+
+        <h1 class="title" id="title">Music project</h1>
+        <h2 style="text-align: center; font-weight: lighter;" id="subtitle">What music is, how does it feels, and how it is present in the life of each one of us</h2>
+        <hr>
+
+        <div class="defaultDiv">
+            <p class="defaultText" id="text1">&nbsp;&nbsp;Music has a huge importance in my life, since its power to make us feel better during hard times, to integrate people together (I'd say
+            it's a bit like the internet itself). Applications like spotify, shazam and iTunes explored this importance of music in our daily lifes and helped bringing music with easiness
+            and security to million of people around the world, demonstrating the power of technology to potencialize music's effects.</p>
+        </div>
+        <p>
+        </p>
+        <div class="defaultDiv">
+            <h2 class="subtitle" id="header"> So what's my project on music?</h2>
+            <p class="defaultText" id="text2">&nbsp;&nbsp;Well, I think this is my most unclear project idea on what to do. Since music's traditional proposals were already largely explored, I thoght I
+            could come up with something that explores more subjective aspects of music, like the feelings while listening a song we love, how music can help people during therapy and
+            how can music become something so passioate and relevant in our lifes. Maybe I'll develop some kind of social media where people can discuss these topics and share their personal
+            experiences, but again, this is just a bare idea of how I could improve people's life using computer science and integrate it to music.</p>
+        </div>
+        <p></p>
+    </body>
+</html>

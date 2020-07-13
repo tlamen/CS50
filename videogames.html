@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+        <script src="Translator.js"></script>
+    </head>
+    <body>
+        <!--navbar from bootstrap-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="index.html">My Webpage</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="football.html" id="futebol">Football<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="music.html" id="musica">Music<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="videogames.html" style="font-weight: bold;">Videogames<span class="sr-only">(current)</span></a>
+              </li>
+            </ul>
+            <form onsubmit="toPortugueseVideogames(); return false;">
+                <input type="image" id="portuguese" src="media/Bandeiras_Brazil_e_Portugal.png" height=40 width=60 alt="Português">
+            </form>
+            <form onsubmit="toEnglishVideogames(); return false;">
+                <input type="image" id="english" src="media/english.jpg" height=40 width=60 alt="English">
+            </form>
+
+          </div>
+        </nav>
+
+       <h1 class="title" id="title">Videogame project</h1>
+       <h2 style="text-align: center; font-weight: lighter;" id="subtitle">The challenges and perspectives of creating a videogame</h2>
+       <hr>
+       <div class="defaultDiv">
+           <p class="defaultText" id="text1">&nbsp;&nbsp;I always loved to play videogames throughout my life. Since early consoles like the playstation 2 in my childhood, to playing online with people from all arround the
+           world with my computer. Games started to become more than a simple way of entertainment, but a form of art, and a mean to connect people: the ones who play it and the ones who
+           develop it.</p>
+       </div>
+       <p></p>
+       <div class="defaultDiv">
+           <h2 class="subtitle" id="header1">So, am I going to create my own videogame?</h2>
+           <p class="defaultText" id="text2">&nbsp;&nbsp;This answer doesn't depend only on me. Playing online games for some years from now, I ended up knowing many cool people, and we ended up
+           creating and administrating a discord server with nearly one hundred members. Recently, we've been growing up together and developed similar interests in engineering, coding
+           and game design, and after some discussion we thought about creating a game together someday. It's still a very superficial idea, I would need to take CS50's games track or take
+           another course on game design, and many of them would need to learn more about programing. But if everyone gets involved in the idea, we might end up developing our own game!</p>
+           <p class="defaultText" id="text3">&nbsp;&nbsp;Here, to give credit to my friends on the server who were interested in this idea (and also to include another mandatory html tag), I came
+           up with this table describing each one's skills and formation.</p>
+       </div>
+       <p></p>
+       <div class="defaultDiv">
+           <table>
+               <tr>
+                   <th id="th1">Name</th>
+                   <th id="th2">Skills and knowledge</th>
+               </tr>
+               <tr>
+                   <td>Breno "skul_rock"</td>
+                   <td id="skul">Experience in pixel art and unity engine game design</td>
+               </tr>
+               <tr>
+                   <td>Wesley "Noobzin"</td>
+                   <td id="noob">Experience in roblox game designs and unity engine</td>
+               </tr>
+               <tr>
+                   <td>Gabriel</td>
+                   <td id="gab">Started mechanical engineering and experience with programming in C and C++</td>
+               </tr>
+               <tr>
+                   <td>Igor</td>
+                   <td id="igor">Started electrical engineering and good experience with programming</td>
+               </tr>
+               <tr>
+                   <td>Luigi</td>
+                   <td id="luigi">Learning coding and experience with technical courses</td>
+               </tr>
+           </table>
+        </div>
+        <p>
+        </p>
+        <div class="defaultDiv" style="margin: auto; width: 20%; height: 20%;">
+            <h3 id="header2">First character design by skul_rock:</h3>
+            <img src="media/Hero_v3.png" style="width: 100%; height: 100%;" alt="First character design by skul_rock.">
+        </div>
+        <p></p>
+    </body>
+</html>
