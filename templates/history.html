@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+    <table>
+        <tr>
+            <th>Symbol</th>
+            <th>Type</th>
+            <th>Number</th>
+            <th>Price</th>
+        </tr>
+            {% for data in database %}
+                <tr>
+                    <td> {{ data["stockSymbol"] }} </td>
+                    <td> {{ data["type"] }}</td>
+                    <td> {{ data["number"] }} </td>
+                    <td> {{ data["price"] }} </td>
+                </tr>
+            {% endfor %}
+    </table>
+{% endblock %}
